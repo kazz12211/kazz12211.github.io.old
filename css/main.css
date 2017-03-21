@@ -147,7 +147,6 @@ section h1{
     padding-top: 10px; /*文字上部の余白指定*/
     border-bottom: 1px solid #bababa;   /*文字の下部に線を描く*/
     margin-bottom: 15px;    /*セクションタイトルの下に余白をつくる*/
-    float: left;    /*フロートする*/
 }
 section p{
     font-size: 100%;    /*フォントサイズの指定*/
