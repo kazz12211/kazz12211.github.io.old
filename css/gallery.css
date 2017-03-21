@@ -1,0 +1,30 @@
+#gallery {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#gallery .image {
+  display: block;
+  float: left;
+  width: 0px;
+  height: 450px;
+  overflow: hidden;
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+#gallery .image:target {
+  width: 450px;
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+#gallery .image a img {
+  width: 100%;
+  height: 100%;
+}
