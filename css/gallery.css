@@ -1,30 +1,35 @@
+/*ギャラリー全体のコンテナー*/
 #gallery {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+	position: relative;
+	max-width: 640px;
+	margin: 0 auto;
 }
-
-#gallery .image {
-  display: block;
-  float: left;
-  width: 0px;
-  height: 450px;
-  overflow: hidden;
-  -moz-transition-duration: 1s;
-  -webkit-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
+/*全サムネイルのコンテナー*/
+#thumbs {
+	margin-left:2%;
 }
-
-#gallery .image:target {
-  width: 450px;
-  -moz-transition-duration: 1s;
-  -webkit-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
+/*サムネイルの幅、ポインターを手のひら*/
+#thumbs label img {
+	width:12.5%;
+	cursor: pointer;
 }
-
-#gallery .image a img {
-  width: 100%;
-  height: 100%;
+/*ラジオボタンを非表示に*/
+#r1, #r2, #r3, #r4, #r5, #r6, #r7, #r8 {
+	display: none;
+}
+/*表示写真の初期配置（全部透明に）とtransition設定*/
+.photo {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.photo img {
+	width:100%;
+	opacity: 0;
+	-webkit-transition: opacity 1s ease;
+	transition: opacity 1s ease;
+}
+/*チェックされたサムネイルに相当する写真だけを表示*/
+#r1:checked ~ #photo1 img, #r2:checked ~ #photo2 img, #r3:checked ~ #photo3 img, #r4:checked ~ #photo4 img, #r5:checked ~ #photo5 img, #r6:checked ~ #photo6 img, #r7:checked ~ #photo7 img, #r8:checked ~ #photo8 img, #r9:checked ~ #photo9 img {
+	opacity: 1;
 }
