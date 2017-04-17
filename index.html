@@ -4,28 +4,6 @@
 <meta charset="utf-8">
 <title>Tsubaki Craft Pages</title>
 <link rel="stylesheet" href="css/main.css">
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-<script type="text/javascript">
-
-google.load("feeds", "1");
-
-function initialize() {
-  var feed = new google.feeds.Feed("https://tsubakicraft.wordpress.com/feed/");
-  feed.load(function(result) {
-    if (!result.error) {
-      var container = document.getElementById("feed");
-      for (var i = 0; i < result.feed.entries.length; i++) {
-        var entry = result.feed.entries[i];
-        var div = document.createElement("div");
-        div.appendChild(document.createTextNode(entry.title));
-        container.appendChild(div);
-      }
-    }
-  });
-}
-google.setOnLoadCallback(initialize);
-</script>
-</head>
 <body>
 <header>
   <h1>椿工藝舎　〜 TSUBAKI CRAFT</h1>
@@ -38,9 +16,6 @@ google.setOnLoadCallback(initialize);
     <li><a href="/about.html">椿工藝舎について</a></li>
   </ul>
 </nav>
-<table>
-  <tr>
-    <td>
 <section>
   <h2>ホーム</h2>
 <p>
@@ -114,11 +89,5 @@ google.setOnLoadCallback(initialize);
   <a href="http://tsubakicraft.wordpress.com" target="_blank">『工房便り』　当工房のブログ</a>
 </p>
 </section>
-</td>
-<td>
-<div id="feed"></div>
-</td>
-</tr>
-</table>
 </body>
 </html>
