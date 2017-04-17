@@ -14,7 +14,7 @@
 	cursor: pointer;
 }
 /*ラジオボタンを非表示に*/
-#r1, #r2, #r3, #r4, #r5, #r6, #r7, #r8, #r9 {
+#r1, #r2, #r3, #r4, #r5, #r6, #r7, #r8, #r9, #r10 {
 	display: none;
 }
 /*表示写真の初期配置（全部透明に）とtransition設定*/
