@@ -248,17 +248,3 @@ footer address{
     color: #fff;    /*文字色の指定*/
     letter-spacing: 5px;    /*文字と文字の間隔をあける*/
 }
-
-section .share-btn{
-    color: #000;    /*文字色の変更*/
-    border: 1px solid blue;   /*線を描く（ホバー時のずれを防ぐため）*/
-    background-color: blue;   /*背景色の指定*/
-    padding-top: 6px;  /*文字上部の余白を指定*/
-    padding-bottom: 6px;   /*文字下部の余白を指定*/
-    padding-right: 30px;    /*文字右側の余白を指定*/
-    padding-left: 30px; /*文字左側の余白を指定*/
-    border-radius: 5px; /*線の角を丸くする*/
-    letter-spacing: 5px;    /*文字と文字の間隔をあける*/
-    text-decoration: none;  /*ブラウザ標準のリンク装飾をオフに*/
-    overflow: hidden;   /*おまじない*/
-}
