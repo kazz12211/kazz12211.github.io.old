@@ -127,7 +127,7 @@ article{
 section{
     width: 95%; /*横幅の指定*/
     padding: 2.5%;  /*余白の指定*/
-    background-color: #f9f9f9;  /*背景色の指定*/
+    background-color: #fff;  /*背景色の指定*/
     overflow: hidden;   /*おまじない*/
 }
 section .date{
